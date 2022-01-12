@@ -127,7 +127,7 @@ nav ul li a:hover {
     border-radius: 10px;
     font-size: 1.2rem;
     margin-top: 20px;
-    transition: .5ms;
+
 }
 
 #hero-section .hero-text .btn:hover {
@@ -213,6 +213,7 @@ nav ul li a:hover {
 
 }
 
-.products .product-card:hover {
-    
+.products .product-card:hover  {
+    box-shadow: 5px 5px 10px var(--hefo-background);
 }
+
