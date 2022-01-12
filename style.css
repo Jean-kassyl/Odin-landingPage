@@ -74,3 +74,52 @@ nav ul li a:hover {
     color: var(--btn-color);
 }
 
+/*hero section styles*/
+#hero-section {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 50px;
+}
+
+#hero-section .hero-text, .hero-img {
+    flex-basis: 38%;
+}
+
+#hero-section .hero-img {
+    position: relative;
+}
+#hero-section .hero-img img{
+    width: 100%;
+}
+#hero-section .hero-img p {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+
+}
+
+#hero-section .hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--he-title);
+
+}
+
+#hero-section .hero-text p {
+    font-size: 18px;
+    color: var(--he-secondary);
+
+}
+#hero-section .hero-text .btn {
+    color: var(--he-secondary);
+    background-color: var(--btn-color);
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+
+
+}
