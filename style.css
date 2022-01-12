@@ -31,6 +31,7 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+/*styling the header and nav*/
 
 header {
     width: 100%;
@@ -44,11 +45,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 5px solid var(--he-secondary);
+    border-bottom: 5px solid var(--btn-color);
 
 }
 
-nav .logo img {
+nav  img {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -56,7 +57,13 @@ nav .logo img {
     margin-left: 50px;
     border-radius: 8px;
 }
-
+nav .logo-text {
+    font-size: 24px;
+    color: var(--he-title);
+    display: inline-block;
+    position: relative;
+    bottom: 13px;
+}
 
 nav ul li {
     display: inline-block;
@@ -116,10 +123,15 @@ nav ul li a:hover {
     background-color: var(--btn-color);
     outline: none;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 10px;
     font-size: 1.2rem;
     margin-top: 20px;
+    transition: .5ms;
+}
 
-
+#hero-section .hero-text .btn:hover {
+    background-color: var(--he-secondary);
+    color: var(--hefo-background);
+    
 }
