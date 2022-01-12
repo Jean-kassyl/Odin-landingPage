@@ -152,12 +152,67 @@ nav ul li a:hover {
     margin: 50px 0;
 }
 
+.products .card-wrapper {
+    width: 280px;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+}
+
+.products .card-wrapper p {
+    width: 200px; 
+    margin: 0 auto;
+    font-size: 1.1rem;
+    display: inline-block;
+
+
+}
+
 .products .product-card {
     width: 200px;
     height: 200px;
     border-radius: 20px;
     border: 3px solid var(--btn-color);
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 auto;
+    position: relative;
 
+}
+
+.products .product-card p {
+    position: absolute;
+    font-size: .5rem;
+    bottom: 5px;
+    right: 5px;
+}
+
+.products .card-wrapper:first-child > .product-card{
+    background-image: url("./images/serjan-midili-MqNYQDmHPbc-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.products .card-wrapper:nth-child(2) > .product-card {
+    background-image: url("./images/owen-lu-I97JLMBKs-k-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.products .card-wrapper:nth-child(3) > .product-card {
+    background-image: url("./images/harley-davidson-52UeZUkp3Hs-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.products .card-wrapper:last-child > .product-card {
+    background-image: url("./images/justin-bernatek-SrEWNfwPZBc-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.products .product-card:hover {
+    
 }
