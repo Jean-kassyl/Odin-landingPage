@@ -135,3 +135,29 @@ nav ul li a:hover {
     color: var(--hefo-background);
     
 }
+
+/*styling the products section*/
+#products {
+    padding: 40px 0;
+}
+#products h3 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: var(--hefo-background);
+    text-align: center;
+}
+
+.products {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.products .product-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 3px solid var(--btn-color);
+    display: inline-block;
+    margin: 0 10px;
+
+}
