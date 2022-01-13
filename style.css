@@ -31,6 +31,10 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+
+a {
+    color: var(--btn-color);
+}
 /*styling the header and nav*/
 
 header {
@@ -85,13 +89,15 @@ nav ul li a:hover {
 #hero-section {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content:space-around;
     padding: 50px;
 }
 
 #hero-section .hero-text, .hero-img {
     flex-basis: 38%;
 }
+
+
 
 #hero-section .hero-img {
     position: relative;
@@ -214,7 +220,7 @@ nav ul li a:hover {
 }
 
 .products .product-card:hover  {
-    box-shadow: 5px 5px 10px var(--hefo-background);
+    box-shadow: 0px 0px 20px var(--hefo-background);
 }
 
 /*testimonial part styles*/
@@ -224,14 +230,14 @@ nav ul li a:hover {
     position: relative;
 }
 #testimonial blockquote {
-    font-size: 30px;
-    line-height: 46px;
+    font-size: 36px;
+    line-height: 52px;
     color: var(--hefo-background);
 }
 
 #testimonial p {
     color: #555;
-    font-size: 20px;
+    font-size: 26px;
     text-align: right;
 
 }
@@ -293,4 +299,43 @@ footer p {
     font-size: 1.2rem;
     color: var(--he-title);
 
+}
+
+/*some media queries*/
+
+@media (max-width:829px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .logo {
+        margin-bottom: 20px;
+    }
+    #hero-section {
+        flex-direction: column;
+        
+    }
+    #hero-section .hero-img {
+        display: none;
+    }
+    #hero-section .hero-text {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .contact-wrapper {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+    .contact-text h4 {
+        font-size: 1.5rem;
+    }
+    .contact-text p {
+        font-size: 1.155rem;
+    }
+    .contact-wrapper button {
+        padding: 4px 8px;
+        font-size: 1.012rem;
+        margin-top: 3px;
+    }
 }
