@@ -244,3 +244,39 @@ nav ul li a:hover {
     left: 50%;
     transform: translateX(-50%);
 }
+
+/*contact section styling*/
+#contact {
+    padding: 100px 0;
+    background-color: var(--he-title);
+}
+.contact-wrapper {
+    background-color: var(--btn-color);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+.contact-text h4 {
+    font-size: 1.8rem;
+    color: var(--he-title);
+}
+
+.contact-text p {
+    font-size: 1.3rem;
+    font-weight: light;
+    color: var(--he-title);
+}
+
+.contact-wrapper button {
+    font-size: 1.3rem;
+    padding: 8px 15px;
+    border: 3px solid var(--he-title);
+    color: var(--he-title);
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
