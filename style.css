@@ -217,3 +217,30 @@ nav ul li a:hover {
     box-shadow: 5px 5px 10px var(--hefo-background);
 }
 
+/*testimonial part styles*/
+#testimonial {
+    background-color: var(--he-secondary);
+    padding: 50px; 
+    position: relative;
+}
+#testimonial blockquote {
+    font-size: 30px;
+    line-height: 46px;
+    color: var(--hefo-background);
+}
+
+#testimonial p {
+    color: #555;
+    font-size: 20px;
+    text-align: right;
+
+}
+#testimonial::before {
+    content: "";
+    border: 25px solid transparent;
+    border-top: 25px solid var(--he-secondary);
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
